@@ -1,4 +1,4 @@
-const url = "http://apisprogravfinal.somee.com/api/Estudiantes";
+const url = "https://apisprogravfinal.somee.com/api/Estudiantes";
 fetch(url)
     .then(response => response.json())
     .then(data => mostrarData(data))
