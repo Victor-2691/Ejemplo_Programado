@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Programado</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-<header class="navegacion">
-    <nav class="navegacion__nav">
-        <a href="index.html">Inicio</a>
-        <a href="buscarpersonajes.html">Buscar Super Héroe</a>
-        <a href="listardatos.html">Consultar Datos</a>
-    </nav>
-</header>
+
 <body>
-   <div class="filtros">
-    <h3  class="filtros__h3">Buscar Super Héroe</h3>
-    <input id="nombre" class="filtros__txtarea" type="text">
-    <button class="filtros__btn" type="button" onclick="BtnBuscarPersonaje()">Buscar</button>
-
-   </div>
 
 
-    <div class="container" id="contenedor">
-
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="buscarpersonajes.html">Buscar Super Héroe</a>
+            <a href="listardatos.html">Consultar Datos</a>
+        </nav>
     </div>
+    <div class="filtros">
+         <label for="nombre" class="filtros__label">Nombre o iniciales del personaje</label>
+        <input id="nombre" class="filtros__txtarea" type="text">
+        <button class="filtros__btn" type="button" onclick="BtnBuscarPersonaje()">Buscar</button>
+       </div>
+    
+    
+        <div class="container" id="contenedor">
+    
+        </div>
+
+  
 
 
   
@@ -34,6 +45,11 @@
     <script src="js/api_Marvel.js" ></script>
     <script src="js/sweetaler.js"></script>
 
-   
+    <footer class="footer">
+        <p>Desarrollado: Victor Salgado - Mario León - Marco Solano
+        <a href="https://github.com/Victor-2691"  target="_blank"> <img src="img/icons8-github.svg" alt="github"> </a> </p>
+      
+    </footer>
+  
 </body>
 </html>

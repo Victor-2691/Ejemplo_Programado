@@ -1,7 +1,7 @@
 var prueba = "prueba";
 
 function cargarpersonajes() {
-    const url = `https://gateway.marvel.com:443/v1/public/characters?limit=10&ts=1&apikey=8df4e5da771d77ed56064114bd28b48d&hash=1df85bf356d0719e2564833a8f08a0fe`
+    const url = `https://gateway.marvel.com:443/v1/public/characters?limit=9&ts=1&apikey=8df4e5da771d77ed56064114bd28b48d&hash=1df85bf356d0719e2564833a8f08a0fe`
     const container = document.querySelector('#contenedor');
     let contenidoHTML = '';
     let idimagen = 0;
@@ -21,9 +21,10 @@ function cargarpersonajes() {
            <img src="${srcimg}" alt="${name}" class="tarjetahero__img">
         
             <p class="tarjetahero__descripcion">${descripcion}</p>
-            <a href="${urlinfo}" target="_blank">
-            <h3 class="tarjetahero__img">Más información</h3></a>
-            <button type="button" class="tarjetahero__seleccionar" data-toggle="modal" data-target="#exampleModal">Seleccionar</button>
+            <a class="" href="${urlinfo}" target="_blank">
+            <h3 class="tarjetahero__informacion">Más información</h3></a>
+            
+            <button id="btn__seleccionar" type="button" class="tarjeta__tbn">Seleccionar</button>
 
          </div>`;
             }
@@ -73,8 +74,8 @@ function buscarpersonajes(nombre) {
         
             <p class="tarjetahero__descripcion">${descripcion}</p>
             <a href="${urlinfo}" target="_blank">
-            <h3 class="tarjetahero__img">Más información</h3></a>
-            <button type="button" class="tarjetahero__seleccionar" data-toggle="modal" data-target="#exampleModal">Seleccionar</button>
+            <h3 class="tarjetahero__informacion">Más información</h3></a>
+            <button type="button" class="tarjeta__tbn">Seleccionar</button>
 
          </div>`;
             }
@@ -123,7 +124,7 @@ ListaPersonajes.addEventListener('click', e => {
        console.log(urlImg);
        let urlrecortado = urlImg.substring(7,urlImg.length);
        console.log(urlrecortado);
-    if (e.target.classList.contains('tarjetahero__seleccionar')) {
+    if (e.target.classList.contains('tarjeta__tbn')) {
         Swal.fire({
             title: "Confirmar",
             text: `Estas seguro que deseas seleccionar este personaje: ${nombre}`,
