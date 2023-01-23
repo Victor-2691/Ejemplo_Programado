@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+<header class="navegacion">
+  <nav class="navegacion__nav">
+      <a href="index.html">Inicio</a>
+      <a href="buscarpersonajes.html">Buscar Super Héroe</a>
+      <a href="listardatos.html">Consultar Datos</a>
+  </nav>
+</header>
+<body>
+  <div class="contenedor__formulario">
+    <form class="formulario">
+        <!--E; fieldset es para configurar el encabezado del formulario-->
+        <fieldset>
+          <legend>Registra tu superhéroe Favorito</legend>
+          <!--Algunas etiquetas como tel estan echas para dispositivos moviles-->
+          <!--La regla para agrupar con DIV es que no se use algun otro tipo de agrupacion
+            como setion o articule-->
+
+          <div class="Contenedor-Campos">
+            <div class="campo">
+              <label >Identificación</label>
+              <input name="id" class="input-text" type="number" placeholder="Tu Identificación" id="Identificacion" required />
+            </div>
+
+            <div class="campo">
+              <label >Nombre</label>
+              <input name="nombre" class="input-text" type="text" placeholder="Nombre" required id="Nombre" />
+            </div>
+
+            <div class="campo">
+              <label >Primer Apellido</label>
+              <input name="primerApellido" class="input-text" type="text" placeholder="Primer Apellido" required />
+            </div>
+
+            <div class="campo">
+              <label >Segundo Apellido</label>
+              <input name="segundoapellido" class="input-text" type="text" placeholder="Segundo Apellido" required />
+            </div>
+          </div>
+          <div class="alinear-derecha">
+            <input class="boton w-10" type="submit" value="Enviar" />
+            <!--<button type="submit">Enviar</button>-->
+          </div>
+          <!-- La diferencia entre un input y un button tiene etiqueta de cierre pero es lo mismo  -->
+        </fieldset>
+      </form>
+
+     <div class="contenedor_heroe">
+      <h1 class="nombre__heroe">
+   
+      </h1>
+
+      <img  class="img__heroe">
+
+     </div>
+
+
+
+    </div>
+
+    <script src="js/sweetaler.js" ></script>
+    <script src="js/formulario.js"></script>
+
+</body>
+</html>
