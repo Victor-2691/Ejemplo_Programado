@@ -1,0 +1,21 @@
+.img__table{
+    width: 8rem;
+    max-width: 90%;
+    
+}
+
+.tbody tr td{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 5rem;
+}
+
+
+
+
+
+.table th{
+    font-size: 1.3rem;
+    text-align: center;
+
+}

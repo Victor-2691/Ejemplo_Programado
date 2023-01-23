@@ -33,7 +33,7 @@ function cargarpersonajes() {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'dd',
+                text: error,
 
             })
         })
@@ -86,7 +86,7 @@ function buscarpersonajes(nombre) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: e,
+                text: error,
 
             })
         })
