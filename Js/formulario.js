@@ -13,7 +13,7 @@ const parametrosUrl = new URLSearchParams(paramURL);
 // }
 
 const nombreheroe = parametrosUrl.get('nombr');
-const urlimg = parametrosUrl.get('urlimg');
+const urlimg = "http://" + parametrosUrl.get('urlimg');
 const urlApi = "http://apisprogravfinal.somee.com/api/Estudiantes"
 // const urlApi = "http://localhost:62093/api/Estudiantes"
 

@@ -120,6 +120,9 @@ ListaPersonajes.addEventListener('click', e => {
      const hero = e.target.parentElement;
        let nombre = (hero.querySelector('h2').textContent);
        let urlImg = (hero.querySelector('img').getAttribute("src"));
+       console.log(urlImg);
+       let urlrecortado = urlImg.substring(7,urlImg.length);
+       console.log(urlrecortado);
     if (e.target.classList.contains('tarjetahero__seleccionar')) {
         Swal.fire({
             title: "Confirmar",
@@ -132,7 +135,7 @@ ListaPersonajes.addEventListener('click', e => {
         }).then((result) => {
             if (result.isConfirmed) {
              
-               window.location = `formulario.html?nombr=${nombre}&urlimg=${urlImg}`;
+                window.location = `formulario.html?nombr=${nombre}&urlimg=${urlrecortado}`;
             }
         })
     }
