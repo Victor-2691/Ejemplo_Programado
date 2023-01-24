@@ -5,3 +5,10 @@ table{
 	font-family: 'Arial';
 	width: 100%;
 }
+
+table th{
+	text-align: left;
+	padding: 10px;
+	background: #3d7ba8;
+	color: #FFF;
+}
