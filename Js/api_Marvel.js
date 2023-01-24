@@ -1,10 +1,5 @@
 
-    window.onload = function () {
-      var contenedor = document.getElementById("cotenedor_carga");
-      contenedor.style.visibility = "hidden";
-      contenedor.style.opacity = "0";
-    };
- 
+
 
  function cargarpersonajes() {
     const loader = document.getElementById('loader');
