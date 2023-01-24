@@ -418,3 +418,30 @@ padding-right: 2rem;
     border: solid 1px black
 }
 
+
+table{
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'Arial';
+	width: 100%;
+}
+
+table th{
+	text-align: center;
+	padding: 10px;
+	background: #3d7ba8;
+	color: #FFF;
+    border: solid 1px black
+}
+
+table tr:nth-child(odd){
+	background: #FFF;
+}
+
+table td{
+	padding: 10px;
+}
+
+.container-table{
+    padding: 5rem 5rem 5rem 5rem
+}
