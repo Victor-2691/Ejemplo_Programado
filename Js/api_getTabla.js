@@ -1,3 +1,18 @@
+
+    window.onload = function () {
+        var contenedor = document.getElementById("cotenedor_carga");
+        contenedor.style.visibility = "hidden";
+        contenedor.style.opacity = "0";
+      };
+
+    // setTimeout( function () {
+    //     {
+    //         var contenedor = document.getElementById("cotenedor_carga");
+    //         contenedor.style.visibility = "hidden";
+    //         contenedor.style.opacity = "0";
+    //     };
+    // }, 1000);
+
 const url = "https://apisprogravfinal.somee.com/api/Estudiantes";
 fetch(url)
     .then(response => response.json())
@@ -12,8 +27,8 @@ fetch(url)
 
 
 
-
 function mostrarData(data) {
+    // Fuerzo artificialmente a que dure más para que se pueda observar el Spinner
 
     let body = ''
 
@@ -29,5 +44,8 @@ function mostrarData(data) {
     <td> <img class="img__table" src="${data[i].Urlimg}"></td>
     </tr>`
     }
+
     document.getElementById('tabladatos').innerHTML = body;
+
 }
+

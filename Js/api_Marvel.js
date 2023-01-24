@@ -1,6 +1,13 @@
-var prueba = "prueba";
 
-function cargarpersonajes() {
+    window.onload = function () {
+      var contenedor = document.getElementById("cotenedor_carga");
+      contenedor.style.visibility = "hidden";
+      contenedor.style.opacity = "0";
+    };
+ 
+
+ function cargarpersonajes() {
+    const loader = document.getElementById('loader');
     const url = `https://gateway.marvel.com:443/v1/public/characters?limit=9&ts=1&apikey=8df4e5da771d77ed56064114bd28b48d&hash=1df85bf356d0719e2564833a8f08a0fe`
     const container = document.querySelector('#contenedor');
     let contenidoHTML = '';
@@ -8,6 +15,9 @@ function cargarpersonajes() {
     fetch(url)
         .then(res => res.json())
         .then((json) => {
+     
+           
+
             for (const hero of json.data.results) {
                 idimagen++;
                 let name = hero.name;
@@ -29,7 +39,9 @@ function cargarpersonajes() {
          </div>`;
             }
             container.innerHTML = contenidoHTML;
+   
         })
+   
         .catch(function (error) {
             Swal.fire({
                 icon: 'error',
