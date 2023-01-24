@@ -1,17 +1,6 @@
 
-    window.onload = function () {
-        var contenedor = document.getElementById("cotenedor_carga");
-        contenedor.style.visibility = "hidden";
-        contenedor.style.opacity = "0";
-      };
+ 
 
-    // setTimeout( function () {
-    //     {
-    //         var contenedor = document.getElementById("cotenedor_carga");
-    //         contenedor.style.visibility = "hidden";
-    //         contenedor.style.opacity = "0";
-    //     };
-    // }, 1000);
 
 const url = "https://apisprogravfinal.somee.com/api/Estudiantes";
 fetch(url)
