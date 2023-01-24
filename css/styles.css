@@ -236,8 +236,6 @@
     padding: 1rem;
     width: 95%;
     
-
-    
 }
 
 .tarjetahero__descripcion {
@@ -282,6 +280,10 @@
     background-color: #120639;
  
 }
+
+
+
+
 
 /* Fin Grid */
 
@@ -403,9 +405,6 @@ padding-right: 2rem;
 }
 
 
-
-
-
 .img__table label{
     font-family: var(--fuentePrincipal);
     font-size: 5rem;
@@ -414,14 +413,8 @@ padding-right: 2rem;
 
 .tbody tr td{
     text-align: center;
-    font-size: 1.1rem;
-    padding-top: 5rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    border: solid 1px black
 }
 
-
-
-.table th{
-    font-size: 1.3rem;
-    text-align: center;
-
-}
