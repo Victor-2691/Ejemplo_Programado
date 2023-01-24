@@ -274,8 +274,6 @@
 
 
 
-
-
 /* Fin Grid */
 
 
@@ -287,9 +285,6 @@
 }
 
 
-
-
-
 .img__table label{
     font-family: var(--fuentePrincipal);
     font-size: 5rem;
@@ -299,12 +294,7 @@
 .tbody tr td{
     text-align: center;
     font-size: 1.5rem;
-    padding-top: 5rem;
-    
+    padding-top: 1rem;
+    border: solid 1px black
 }
 
-
-.table th{
-    font-size: 1.5rem;
-    margin: auto;
-}
