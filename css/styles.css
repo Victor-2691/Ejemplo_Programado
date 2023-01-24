@@ -156,14 +156,23 @@
 /* Fin Footer */
 
 /* Pagina personajes Buscar */
+@media (min-width: 468px) {
+    .filtros{
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+   
+    }
+}  
+
 .filtros{
 
-    display: block;
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-
 }
+
+
 
 .filtros label{
     font-size: 2rem;
@@ -268,17 +277,122 @@
     border: none;
 }
 
-.tarjeta__tbn button:hover {
+.tarjeta__tbn:hover {
     cursor: pointer;
     background-color: #120639;
  
 }
 
-
-
-
-
 /* Fin Grid */
+
+/* Inicio Formulario */
+@media (min-width: 768px) {
+    .contenedor__formulario{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        text-align: center;
+      }
+      .img__heroe{
+
+        border-radius: 1rem;
+        padding-bottom: 15rem;
+        padding-right: 10rem;
+    
+    
+    }
+}  
+
+.contenedor__formulario{
+    display: grid;
+    margin-top: 5rem;
+}
+
+.img__heroe{
+
+    border-radius: 1rem;
+   height: 85%;
+padding-left: 2rem;
+padding-right: 2rem;
+
+
+}
+
+.contenedor-campos {
+  
+
+}
+
+
+.formulario {
+    /* background-color: var(--gris);
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    /* margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem; */
+    background-color: var(--GrisClaro);
+    width: min( 45rem, 100%); /*Utulizar el valor mas pequeno*/
+    margin: 0 auto; /*Siempre que tenga un formulario y que el padre no tenga display flex*/
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 15px 0px 31px 3px rgba(2,9,26,1);
+    -moz-box-shadow: 15px 0px 31px 3px rgba(2,9,26,1);
+    box-shadow: 15px 0px 31px 3px rgba(2,9,26,1);
+}
+
+.formulario fieldset {
+    border: none;
+    text-align: center;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--azuloscuro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+
+.input-text {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.btn__formulario{
+    background-color: var(--verde);
+    color: var(--blanco);
+    font-size: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: none;
+    margin-top: 2rem;
+
+}
+
+.btn__formulario:hover{
+    cursor: pointer;
+    background-color: #120639;
+}
+
+
+
+/* Fin Formulario */
 
 
 
@@ -303,8 +417,6 @@
     font-size: 1.1rem;
     padding-top: 5rem;
 }
-
-
 
 
 
