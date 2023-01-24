@@ -3,6 +3,7 @@ table{
 	font-size: 12pt;
 	font-family: 'Arial';
 	width: 100%;
+    margin: auto;
 }
 
 table th{
