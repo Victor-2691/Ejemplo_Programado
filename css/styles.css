@@ -255,13 +255,13 @@ h3 {
   align-items: stretch;
   text-align: center;
 }
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
         align-items: flex-start;
         text-align: center;
     }
-} */
+}
 
 /** Personajes **/
 .container__tarjetahero {
