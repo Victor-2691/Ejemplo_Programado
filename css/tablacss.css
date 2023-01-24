@@ -20,6 +20,7 @@ table{
 	width: 100%;
 }
 
+.table table-bordered table-striped
 table th{
 	text-align: left;
 	padding: 10px;
